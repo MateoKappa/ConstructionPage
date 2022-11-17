@@ -151,6 +151,7 @@ function Works() {
               voluptatibus ex recusandae ratione temporibus, necessitatibus
               nihil, tempore laboriosam facilis nam modi possimus, non harum."
         Image="/Paintings_.png"
+        Right={false}
         Page="/painting"
       />
     </div>
