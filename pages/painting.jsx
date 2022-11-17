@@ -84,7 +84,7 @@ const SectionOneComp = () => {
   );
 };
 
-export default function MyBook() {
+export default function Painting() {
   const ImageComponent = (imageName) => {
     console.log(imageName.imageName);
     return (

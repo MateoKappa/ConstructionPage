@@ -8,7 +8,7 @@ import Window from "../components/Window/Window";
 
 import LastComponent from "../components/LastComponent/LastComponent.jsx";
 
-function works() {
+function Works() {
   const [CurrentImage, SetCurrentImage] = useState(null);
   const [number, SetNumber] = useState(0);
   let images = WorkImages().images;
