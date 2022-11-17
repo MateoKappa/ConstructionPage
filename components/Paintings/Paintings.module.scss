@@ -1,0 +1,453 @@
+@keyframes Move {
+  0% {
+    margin-bottom: -50px;
+  }
+  50% {
+    margin-bottom: -80px;
+  }
+  100% {
+    margin-bottom: -50px;
+  }
+}
+
+div.App {
+  div.SectionOne {
+    width: 1600px;
+    margin: auto;
+    height: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 47.5% 5% 47.5%;
+    height: 800px;
+    div.TextOne {
+      height: 100%;
+      h1 {
+        text-align: center;
+        font-size: 55px;
+        text-shadow: -10px 5px 10px #8c8c8c4c;
+        background: #0e42cf;
+        background: linear-gradient(
+          to right,
+          #0e42cf 0%,
+          #4fffff 50%,
+          #ffd60a 60%,
+          #cf1512 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      div.SmallText {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        background-color: rgba(174, 174, 174, 0.061);
+        align-items: center;
+        box-shadow: 3px 4px #e1d8d8;
+        margin: 0px 75px 10px 75px;
+        width: 100%;
+        margin: auto;
+        padding: 0px 10px 15px 30px;
+        margin-bottom: 15px;
+        transition: 0.75s;
+        transform: scale(1);
+        &:hover {
+          transition: 0.75s;
+          transform: scale(1.1);
+        }
+      }
+    }
+    div.ButtonOne {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      button {
+        border: none;
+        background-color: white;
+
+        height: 50px;
+        width: 100%;
+        animation: Move 1.75s infinite;
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+
+    div.ImageOne {
+      margin-top: 60px;
+      height: calc(var(--containerH) * 2);
+      height: 100%;
+      position: relative;
+      width: 110%;
+      div.brush {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 400px;
+        transform: rotate(255deg);
+      }
+    }
+  }
+  div.SectionTwo {
+    margin: auto;
+    margin-top: 250px;
+    height: 2300px;
+    div.ImageCapacity {
+      display: grid;
+      grid-template-columns: 500px 500px;
+      justify-content: center;
+      grid-gap: 10px;
+      div.ImageContainer {
+        height: 700px;
+        position: relative;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 10px solid black;
+        }
+        i {
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          font-size: 20px;
+          margin: 20px;
+          z-index: 5;
+          &:hover {
+            transition: 400ms;
+            color: white;
+          }
+        }
+      }
+    }
+    div.LottieLeft {
+      width: 50%;
+      position: absolute;
+      margin-left: -100px;
+      z-index: -1;
+      height: 2200px;
+    }
+    div.LottieRight {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      height: 2200px;
+    }
+  }
+  div.SectionTwoV2 {
+    margin: auto;
+    margin-top: 250px;
+    display: grid;
+    justify-content: center;
+    div.ImageContainer {
+      height: 90vh;
+      position: relative;
+      img {
+        height: 100%;
+        object-fit: cover;
+        border: 10px solid black;
+      }
+      i {
+        position: absolute;
+        right: 0;
+        font-size: 40px;
+        margin: 20px;
+        cursor: pointer;
+        z-index: 5;
+        &:hover {
+          transition: 400ms;
+          color: white;
+        }
+      }
+    }
+    div.LottieLeft {
+      filter: blur(5px);
+
+      width: 50%;
+      position: absolute;
+      margin-left: -100px;
+      z-index: -1;
+      height: 100vh;
+    }
+    div.LottieRight {
+      filter: blur(5px);
+      width: 50%;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  div.App {
+    div.SectionOne {
+      width: 100%;
+
+      height: 100%;
+      div.TextOne {
+        h1 {
+          font-size: 3vw;
+        }
+        div.SmallText {
+          font-size: 1.1vw;
+        }
+      }
+      div.ButtonOne {
+        button {
+          i {
+          }
+        }
+      }
+
+      div.ImageOne {
+        margin-top: 0px;
+        height: calc(var(--containerH) * 2);
+        position: relative;
+        height: 70vw;
+        left: -5%;
+        div.brush {
+          position: absolute;
+          top: 0;
+          left: 40px;
+          width: 400px;
+          transform: rotate(255deg);
+        }
+      }
+    }
+    div.SectionTwo {
+      margin-top: 150px;
+
+      div.LottieLeft {
+        height: 100%;
+      }
+      div.LottieRight {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div.App {
+    div.SectionOne {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      div.TextOne {
+        width: 70%;
+        margin: auto;
+        h1 {
+          font-size: 6vw;
+        }
+        div.SmallText {
+          font-size: 1.5vw;
+        }
+      }
+      div.ButtonOne {
+        position: absolute;
+        bottom: -200px;
+        left: 50%;
+        z-index: 20;
+        button {
+          i {
+          }
+        }
+      }
+
+      div.ImageOne {
+        border-bottom: 1px solid black;
+        padding-bottom: 100px;
+        margin-top: 0px;
+        height: 100%;
+        position: relative;
+        left: -5%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        div.image {
+          height: 500px;
+        }
+
+        div.brush {
+          position: absolute;
+          top: 0;
+          left: 40px;
+          width: 400px;
+          transform: rotate(255deg);
+        }
+      }
+    }
+    div.SectionTwo {
+      margin: auto;
+      margin-top: 75px;
+      margin-bottom: 150px;
+      height: 100%;
+      div.ImageCapacity {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        justify-content: center;
+        grid-gap: 3px;
+        div.ImageContainer {
+          height: 90vw;
+          margin-bottom: 3px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 5px solid black;
+          }
+          i {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 20px;
+            margin: 20px;
+            z-index: 5;
+            &:hover {
+              transition: 400ms;
+              color: white;
+            }
+          }
+        }
+      }
+      div.LottieLeft {
+        width: 50%;
+        position: absolute;
+        margin-left: -100px;
+        z-index: -1;
+        height: 100%;
+      }
+      div.LottieRight {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+      }
+    }
+    div.SectionTwoV2 {
+      margin: auto;
+      margin-top: 100px;
+      display: grid;
+      justify-content: center;
+      div.ImageContainer {
+        height: 90vh;
+        position: relative;
+        margin: auto;
+        width: 90%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border: 5px solid black;
+        }
+        i {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 40px;
+          margin: 20px;
+          cursor: pointer;
+          z-index: 5;
+          &:hover {
+            transition: 400ms;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  div.App {
+    div.SectionOne {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      div.TextOne {
+        width: 80%;
+        margin: auto;
+        h1 {
+          font-size: 6vw;
+        }
+        div.SmallText {
+          text-align: center;
+          font-size: 1.8vw;
+          padding: 15px;
+        }
+      }
+      div.ButtonOne {
+        position: absolute;
+        bottom: -200px;
+        left: 50%;
+        z-index: 20;
+        button {
+          i {
+          }
+        }
+      }
+
+      div.ImageOne {
+        border-bottom: 1px solid black;
+        padding-bottom: 100px;
+        margin-top: 0px;
+        height: 100%;
+        position: relative;
+        left: -5%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        div.image {
+          height: 500px;
+        }
+
+        div.brush {
+          position: absolute;
+          top: 0;
+          left: 40px;
+          width: 400px;
+          transform: rotate(255deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  div.App {
+    div.SectionOne {
+      div.TextOne {
+        width: 90%;
+        h1 {
+          font-size: 8vw;
+        }
+        div.SmallText {
+          font-size: 2.3vw;
+          padding: 15px;
+        }
+      }
+
+      div.ImageOne {
+        padding-bottom: 40px;
+
+        div.image {
+          height: 500px;
+        }
+
+        div.brush {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

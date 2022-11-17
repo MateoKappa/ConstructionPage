@@ -1,0 +1,190 @@
+div.header {
+  display: grid;
+  grid-template-columns: 30% 45% 30%;
+  border-bottom: 1px solid #00000036;
+  height: 12vh;
+  margin: auto;
+  img {
+    width: 60px;
+    display: block;
+    margin: auto;
+    margin-left: 50px;
+  }
+
+  div.components {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // a {
+    //   color: black;
+    //   text-decoration: none;
+    //   font-size: 20px;
+    //   padding-right: 20px;
+    // }
+    h4 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      color: #ccc;
+      padding-right: 20px;
+      cursor: pointer;
+    }
+    h4:before {
+      position: absolute;
+      color: #262626;
+      top: 0;
+      left: 0;
+      width: 0%;
+      overflow: hidden;
+      transition: all 0.75s;
+    }
+    h4:hover:before {
+      width: 100%;
+    }
+
+    h4[id="arxikh"]:before {
+      content: "Αρχικη";
+    }
+
+    h4[id="douleies"]:before {
+      content: "Δουλειες";
+    }
+
+    h4[id="zwgrafies"]:before {
+      content: "Ζωγραφιες";
+    }
+
+    h4[id="epikoinwnia"]:before {
+      content: "Επικοινωνια";
+    }
+  }
+  div.telephone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 150px;
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: rgba(0, 0, 0, 0.671);
+    }
+    p {
+      font-size: 18px;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  div.header {
+    img {
+      width: 60px;
+      display: block;
+      margin: auto;
+      margin-left: 5px;
+    }
+
+    div.components {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: 20px;
+        padding-right: 20px;
+      }
+    }
+    div.telephone {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 80px;
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: rgba(0, 0, 0, 0.671);
+      }
+      p {
+        font-size: 18px;
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  div.header {
+    width: 100%;
+    img {
+      width: 50px;
+    }
+
+    div.components {
+      a {
+        font-size: 16px;
+        padding-right: 20px;
+      }
+    }
+    div.telephone {
+      i {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.tel_header {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 25% 50% 25%;
+    margin-bottom: 10px;
+    img {
+      margin: 10px;
+      margin-bottom: 0px;
+      width: 40px;
+      margin-left: 20px;
+    }
+
+    div.tel_components {
+      margin-top: 20px;
+      margin-left: 20px;
+
+      text-align: center;
+
+      i {
+        font-size: 16px;
+        padding-right: 20px;
+        color: rgb(79, 94, 79);
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+    div.tel_telephone {
+      i {
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+        &:hover {
+        }
+      }
+    }
+  }
+}

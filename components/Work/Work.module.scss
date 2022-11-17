@@ -1,0 +1,267 @@
+div.FullPage {
+  height: 100%;
+  --gap: 16px;
+  --num-cols: 3;
+  position: relative;
+  overflow: hidden;
+  div.RightBackground {
+    position: absolute;
+    width: 50%;
+    background-color: rgb(11 184 158 / 25%);
+    height: 100%;
+    right: 0px;
+    top: 0;
+    z-index: -10;
+    clip-path: polygon(58% 0, 140% -50%, 65% 100%, 0% 100%);
+  }
+  div.LeftBackground {
+    position: absolute;
+    width: 40%;
+    background-color: rgb(11 184 158 / 25%);
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -15;
+    clip-path: polygon(40% 0, 100% 0%, 25% 100%, -45% 100%);
+  }
+
+  div.FirstSection {
+    height: 800px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    border-bottom: 2.5px solid rgb(223, 240, 223);
+    div.Text_Animation {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div.lottie {
+        width: 300px;
+      }
+      h1 {
+        width: 80%;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  // Section One
+  div.SectionTwo {
+    div.ImageGrid {
+      width: 85%;
+      margin: auto;
+      grid-row-gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(var(--num-cols), 1fr);
+      margin-bottom: 100px;
+      margin-top: 30px;
+    }
+  }
+  // Section Two
+  div.Page {
+    div.Image {
+      display: flex;
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 100px;
+      margin-top: 50px;
+      i[id="X"] {
+        padding-top: 50px;
+        right: 0;
+        font-size: 40px;
+        position: absolute;
+        margin: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      img {
+        padding-top: 50px;
+        height: 820px;
+        object-fit: contain;
+      }
+      div.Buttons {
+        position: absolute;
+        z-index: 5;
+        left: 46%;
+        bottom: 10px;
+        width: 100%;
+        i {
+          background-color: WHITE;
+          color: white;
+          font-size: 12px;
+          border-radius: 50%;
+          border: none;
+          margin: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  div.FullPage {
+    div.FirstSection {
+      div.Text_Animation {
+        div.lottie {
+        }
+        h1 {
+          font-size: 25px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1567px) {
+  div.FullPage {
+    overflow-y: hidden;
+    height: 100%;
+    --gap: 16px;
+    --num-cols: 2;
+    --row-height: 300px;
+    div.FirstSection {
+      div.Text_Animation {
+        div.lottie {
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    div.RightBackground {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(11 184 158 / 25%);
+      right: 0px;
+      z-index: -10;
+      clip-path: polygon(77% 0, 100% 0, 100% 100%, 77% 100%);
+    }
+    div.LeftBackground {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(11 184 158 / 25%);
+      top: 0;
+      left: 0;
+      z-index: -15;
+      clip-path: polygon(0 0, 25% 0, 25% 100%, 0% 100%);
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  div.FullPage {
+    div.FirstSection {
+      display: flex;
+      flex-wrap: wrap;
+      div.Text_Animation {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div.lottie {
+          width: 15vh;
+        }
+        h1 {
+          font-size: 20px;
+          width: 80%;
+          text-align: center;
+        }
+      }
+      img {
+        margin: auto;
+        width: 70%;
+      }
+    }
+
+    div.SectionTwo {
+      display: flex;
+      overflow-x: auto;
+      // grid-template-columns: repeat(var(--num-cols), 1fr);
+      width: 100%;
+      align-items: center;
+      margin-bottom: 100px;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+    }
+    div.Page {
+      div.Image {
+        img {
+          height: 80vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  div.FullPage {
+    div.FirstSection {
+      height: 700px;
+      div.Text_Animation {
+        div.lottie {
+        }
+        h1 {
+          font-size: 15px;
+          width: 80%;
+          text-align: center;
+        }
+      }
+      img {
+        margin: auto;
+        width: 90%;
+      }
+    }
+
+    div.SectionTwo {
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 100px;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  div.FullPage {
+    div.FirstSection {
+      height: 70vh;
+      div.Text_Animation {
+        div.lottie {
+        }
+        h1 {
+          font-size: 15px;
+          width: 80%;
+          text-align: center;
+        }
+      }
+      img {
+        margin: auto;
+        width: 100%;
+      }
+    }
+
+    div.SectionTwo {
+      div.ImageGrid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

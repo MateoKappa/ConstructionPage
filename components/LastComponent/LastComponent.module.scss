@@ -1,0 +1,114 @@
+@keyframes RightLeft {
+  0% {
+    right: -70px;
+  }
+  50% {
+    right: -140px;
+  }
+  100% {
+    right: -70px;
+  }
+}
+div.SectionThree {
+  --Title: 40px;
+  border: 1px solid black;
+  margin: auto;
+  height: 550px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 50px;
+  div.Container {
+    padding-top: 50px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    padding-left: 6vw;
+    div.TextContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      width: 800px;
+      margin: auto;
+      margin-right: 10px;
+
+      h1 {
+        font-size: var(--Title);
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      i {
+        font-size: 80px;
+        position: absolute;
+        right: 0px;
+        width: 120px;
+        top: 45.5%;
+        animation: RightLeft 2s infinite;
+      }
+    }
+    img {
+      border: 1px solid black;
+      margin-left: 150px;
+      background-color: rgb(251, 253, 255);
+      display: flex;
+      align-items: flex-start;
+      object-fit: contain;
+      height: 449px;
+      cursor: pointer;
+      box-shadow: 20px 20px 15px 5px rgba(0, 0, 0, 0.361);
+      object-fit: cover;
+      max-width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  div.SectionThree {
+    --Title: 31px;
+    div.Container {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  div.SectionThree {
+    div.Container {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  div.SectionThree {
+    height: 100%;
+    div.Container {
+      padding: 30px 0 30px 0px;
+
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        margin: 0px;
+      }
+      h4 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
+      }
+      div.TextContainer {
+        width: 100%;
+      }
+      img {
+        margin: 0;
+        width: 300px;
+        margin: auto;
+      }
+    }
+  }
+}

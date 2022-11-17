@@ -1,0 +1,118 @@
+div.SectionOne {
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  div.lottie {
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+  }
+  img {
+    position: relative;
+    bottom: 0;
+    margin-left: 50px;
+  }
+
+  div.title {
+    position: relative;
+    top: 15%;
+    display: flex;
+    text-shadow: 5px 10px 5px #4843435a;
+    div.text {
+      font-size: 70px;
+      display: grid;
+      height: 200px;
+      p {
+        margin-top: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  div.SectionOne {
+    height: 100%;
+  }
+  div.page {
+    div.SectionTwo {
+      div.SectionTwoDisplay {
+        div.SectionTwoLeft {
+          h2 {
+            font-size: 32px;
+          }
+        }
+        div.pictures {
+          img.image {
+            width: 700px;
+          }
+          div.work {
+            width: 680px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  div.SectionOne {
+    height: 100%;
+    img {
+      margin-top: 8.5vw;
+    }
+    div.title {
+      position: relative;
+      top: 15%;
+      display: flex;
+      text-shadow: 5px 10px 5px #4843435a;
+      div.text {
+        font-size: 50px;
+        display: grid;
+        height: 200px;
+        p {
+          margin-top: 40px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.SectionOne {
+    height: 42.4vh;
+    display: flex;
+    flex-direction: column;
+    div.lottie {
+      position: absolute;
+      bottom: 10;
+      z-index: -1;
+    }
+    img {
+      bottom: 0;
+      width: 100%;
+    }
+    div.title {
+      position: relative;
+      top: 15%;
+      display: flex;
+      text-shadow: 5px 10px 5px #4843435a;
+      div.text {
+        font-size: 30px;
+        display: grid;
+        height: 110px;
+        text-align: center;
+        p {
+          margin-top: 5px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+}

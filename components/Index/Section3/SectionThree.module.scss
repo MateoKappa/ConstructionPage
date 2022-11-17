@@ -1,0 +1,119 @@
+div.SectionThree {
+  height: 100vh;
+  margin-top: 20px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.248);
+  background-color: #f3f2f2;
+  z-index: 5;
+
+  span.lottiePlayer {
+    position: absolute;
+    top: 2%;
+    width: 200px;
+  }
+  div.BackLeftSide {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 85px;
+    z-index: -3;
+    clip-path: polygon(34% 0, 82.5% 0, 51% 100%, 1% 100%);
+  }
+  div.BackRightSide {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: -220px;
+    z-index: -3;
+    clip-path: polygon(120% 0, 82.5% 0, 51% 100%, 0% 100%);
+  }
+  div.SectionThreeDisplay {
+    width: 80%;
+    margin: auto;
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      text-decoration: underline;
+    }
+    div.Color_Palette {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      div.ColorPicker {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 120px;
+      }
+      div.Palette {
+        margin: auto;
+        border: 4px solid rgba(0, 0, 0);
+        height: 650px;
+        width: 250px;
+        display: grid;
+        grid-auto-rows: 70% 30%;
+        box-shadow: 20px 12.5px rgba(0, 10, 10, 0.08);
+        transform: skewY(15deg);
+        margin-right: 200px;
+        margin-top: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  div.SectionThree {
+    div.SectionThreeDisplay {
+      div.Palette {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  div.SectionThree {
+    height: 80vh;
+    div.SectionThreeDisplay {
+      div.Color_Palette {
+        display: flex;
+        div.Palette {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.SectionThree {
+    height: 100%;
+    padding-bottom: 50px;
+
+    div.BackLeftSide {
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      right: 20px;
+      z-index: -3;
+      clip-path: polygon(34% 0, 82.5% 0, 51% 100%, 1% 100%);
+    }
+
+    div.SectionThreeDisplay {
+      div.Color_Palette {
+        display: flex;
+        flex-direction: column;
+        div.ColorPicker {
+          margin-top: 20px;
+          display: flex;
+        }
+        div.Palette {
+          transform: skewY(0deg);
+          margin: auto;
+          margin-top: 30px;
+          height: 500px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
