@@ -157,4 +157,4 @@ function Works() {
   );
 }
 
-export default works;
+export default Works;

@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "../components/Contact/Contact2";
 
-function Contact() {
+function ContactPage() {
   return (
     <div>
       <Contact />
@@ -9,4 +9,4 @@ function Contact() {
   );
 }
 
-export default contact;
+export default ContactPage;
