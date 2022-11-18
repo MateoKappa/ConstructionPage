@@ -5,7 +5,7 @@ import useWindowSize from "../Window/Window";
 
 import React from "react";
 
-function ImageGallery({images, ImageIndex, SetCurrentImage}) {
+function ImageGallery({images, SetCurrentImage}) {
   const [imageChecker, SetImageChecker] = useState(true);
   const [imageClicker, SetImageClicker] = useState(true);
   console.log(imageChecker);

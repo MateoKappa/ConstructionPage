@@ -17,7 +17,7 @@ const Layout = ({children}) => {
         ></link>
         <title>Destin Coffee House</title>
         <link rel="icon" type="image/x-icon"></link>
-        <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script>
+
         <link
           href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
           rel="stylesheet"

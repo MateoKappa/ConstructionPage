@@ -11,10 +11,10 @@ div.page {
   overflow-y: hidden;
   div.container {
     display: grid;
-    margin: auto;
     width: 80%;
     grid-template-columns: 33% 33% 33%;
-    justify-content: center;
+    margin: auto;
+
     height: 100%;
 
     div.middle {

@@ -60,11 +60,7 @@ function Works() {
           <div className={styles.LeftBackground}></div>
           <div className={styles.ImageGrid}>
             {images.map((images, index) => (
-              <ImageGallery
-                images={images}
-                ImageIndex={index}
-                SetCurrentImage={SetCurrentImage}
-              />
+              <ImageGallery images={images} SetCurrentImage={SetCurrentImage} />
             ))}
           </div>
         </div>
