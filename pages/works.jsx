@@ -4,7 +4,6 @@ import {useState} from "react";
 import styles from "../components/Work/Work.module.scss";
 import {AnimatePresence, motion} from "framer-motion";
 import WorkImages from "../components/Images/WorkImages.jsx";
-import Window from "../components/Window/Window";
 
 import LastComponent from "../components/LastComponent/LastComponent.jsx";
 

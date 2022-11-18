@@ -1,10 +1,10 @@
 import styles from "./Header.module.scss";
-import useWindowSize from "../../Window/window";
 import {useState} from "react";
 import Link from "next/link";
+import Window from "../../Window/Window";
 
 function Header() {
-  const {height, width} = useWindowSize();
+  const {height, width} = Window();
   const [shake, setShake] = useState(false);
 
   return width ? (

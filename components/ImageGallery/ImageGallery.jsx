@@ -1,7 +1,6 @@
 import styles from "./ImageGallery.module.scss";
 import {useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
-import useWindowSize from "../Window/Window";
 
 import React from "react";
 
