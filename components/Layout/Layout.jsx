@@ -3,7 +3,6 @@ import styles from "./Layout.module.scss";
 import {useRouter} from "next/router";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import Script from "next/script";
 const Layout = ({children}) => {
   const router = useRouter();
   console.log(router);
