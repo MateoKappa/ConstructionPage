@@ -116,7 +116,7 @@ function SectionTwo() {
             >
               ΖΩΓΡΑΦΙΕΣ
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 setCounter(0);
               }}
@@ -129,7 +129,7 @@ function SectionTwo() {
               }}
             >
               ΑΝΑΠΑΛΑΙΩΣΗ ΕΠΙΠΛΩΝ
-            </button>
+            </button> */}
           </div>
         </div>
         <div className={styles.SectionTwoRight}>

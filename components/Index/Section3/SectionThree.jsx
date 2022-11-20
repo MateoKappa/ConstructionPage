@@ -75,9 +75,13 @@ function SectionThree() {
               }
             ></div>
             <div
+              className={styles.PaletteInfo}
               style={{borderTop: "2px solid black", backgroundColor: "white"}}
             >
-              {color.hex}
+              <h2 style={{textAlign: "center"}}>
+                {" "}
+                Color hex :{width > 800 ? color.hex : color1}
+              </h2>
             </div>
           </div>
         </div>
