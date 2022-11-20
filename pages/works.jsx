@@ -19,7 +19,6 @@ function Works() {
       SetNumber(0);
     }
   };
-
   const FirstSection = () => {
     return (
       <div className={styles.FirstSection}>
@@ -46,7 +45,7 @@ function Works() {
     );
   };
 
-  return (
+  return images ? (
     <div className={styles.FullPage}>
       <div className={styles.RightBackground}></div>
       <div className={styles.LeftBackground}></div>
@@ -84,7 +83,9 @@ function Works() {
               />
             </AnimatePresence>
             <i
-              onClick={() => SetCurrentImage(null)}
+              onClick={() => {
+                SetCurrentImage(null), SetNumber(0);
+              }}
               className="fas fa-times"
               id="X"
             ></i>
@@ -118,27 +119,6 @@ function Works() {
                 }
               />
             </div>
-            {/* <div className={styles.Buttons}>
-              <i
-                className="fa-regular fa-circle"
-                onClick={() => {
-                  TheNumber();
-                }}
-                style={
-                  number == 0 ? {backgroundColor: "rgb(255, 252, 144)"} : null
-                }
-              />
-
-              <i
-                className="fa-regular fa-circle"
-                onClick={() => {
-                  TheNumber();
-                }}
-                style={
-                  number == 0 ? null : {backgroundColor: "rgb(255, 252, 144)"}
-                }
-              />
-            </div> */}
           </div>
         </div>
       )}
@@ -154,7 +134,7 @@ function Works() {
         Page="/painting"
       />
     </div>
-  );
+  ) : null;
 }
 
 export default Works;
