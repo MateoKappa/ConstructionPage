@@ -33,12 +33,11 @@ function Works() {
               autoplay
             ></lottie-player>
           </div>
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            vitae esse modi aperiam eum cumque repellendus sapiente saepe
-            tempora mollitia, error quibusdam impedit quae. Maiores quibusdam
-            consequuntur nobis veniam tenetur!
-          </h1>
+          <h2>
+            Εδω σας παρουσιαζουμε καποια απο το εργα που πραγματοποιηθηκαν με
+            την παροδο του χρονου.Οι δουλειες που παρουσιαζονται ειναι
+            ολοκληρομενες και ανεβηκαν με την συναινεση του ιδιοκτητη
+          </h2>
         </div>
         <img src="/WallPainTransparent.png" />
       </div>
@@ -89,46 +88,13 @@ function Works() {
               className="fas fa-times"
               id="X"
             ></i>
-            <div className={styles.Buttons}>
-              <i
-                className="fa-regular fa-circle"
-                onClick={() => {
-                  TheNumber();
-                }}
-                style={
-                  number == 0
-                    ? {
-                        backgroundColor: "rgb(255, 252, 144)",
-                        color: "rgb(255, 252, 144)",
-                      }
-                    : null
-                }
-              />
-              <i
-                className="fa-regular fa-circle"
-                onClick={() => {
-                  TheNumber();
-                }}
-                style={
-                  number == 0
-                    ? null
-                    : {
-                        backgroundColor: "rgb(255, 252, 144)",
-                        color: "rgb(255, 252, 144)",
-                      }
-                }
-              />
-            </div>
           </div>
         </div>
       )}
 
       <LastComponent
         Title="Κοιταξτε και καποιες απo τις ζωγραφιες μας !"
-        Text="  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum nobis quidem consequatur laudantium. Laborum optio
-              voluptatibus ex recusandae ratione temporibus, necessitatibus
-              nihil, tempore laboriosam facilis nam modi possimus, non harum."
+        Text=" Εδω παρουσιαζουμε καποιες τοιχογραφιες απο εναν καλλιτεχνη που παρεχεται απο το συνεργειο μας. Ο οποιος ειναι διαθεσιμος σε καθε ανακαινιση σπιτιου"
         Image="/Paintings_.png"
         Right={false}
         Page="/painting"

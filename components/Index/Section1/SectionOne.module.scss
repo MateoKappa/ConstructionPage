@@ -3,7 +3,7 @@ div.SectionOne {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 32% 70%;
   div.lottie {
     position: relative;
     bottom: 0;
@@ -83,7 +83,7 @@ div.SectionOne {
 
 @media screen and (max-width: 900px) {
   div.SectionOne {
-    height: 42.4vh;
+    height: 60.4vh;
     display: flex;
     flex-direction: column;
     div.lottie {
@@ -106,6 +106,9 @@ div.SectionOne {
         height: 110px;
         text-align: center;
         p {
+          border-radius: 50%;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.336);
           margin-top: 5px;
           font-size: 12.5px;
         }

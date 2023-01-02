@@ -6,17 +6,31 @@ function SectionOne() {
   const {width, height} = Window();
 
   return (
-    <div style={{position: "relative", marginBottom: 0}}>
+    <div
+      style={{
+        position: "relative",
+        marginBottom: 0,
+        zIndex: -5,
+      }}
+    >
       <div className={styles.SectionOne}>
         <div className={styles.title}>
           {" "}
           <div className={styles.text}>
             ΑΝΑΚΑΙΝΙΣΕΙΣ EΠΙΣΚΕΥΕΣ
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              dolore nam provident accusamus quidem beatae maxime rerum placeat
-              reiciendis quibusdam, necessitatibus corrupti sit quos, ex
-              repellendus. Error asperiores tenetur nihil.
+              Η εταιρεία μας DreamHouseGr δραστηριοποιείται σε ολη την Ελλαδα
+              στην ανακαίνιση σπιτιού , οι υπηρεσιες που προσφερουμε ειναι :{" "}
+              <br />
+              <br />
+              Ελαιοχρωματισμοι, σοβατισματα, επενδυση πετρας, γυψοσανιδα,
+              μονωσεις ταρατσιων, πλακακια, τεχνοτροπιες, ζωγραφιες, αναπαλαιωση
+              επιπλων.
+              <br />
+              <br />Η εταιρια μας δραστηριοποιείται εδω και 30 χρονια και
+              συνεργαζεται με υδραυλικους και ηλεκτρολογους <br /> ωστε να
+              φροντισουμε το εργο μας να <br />
+              πραγματοποιηθει ταχυτητατα και <br /> αποτελεσματικα{" "}
             </p>{" "}
           </div>
         </div>
