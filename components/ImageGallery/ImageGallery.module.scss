@@ -1,15 +1,14 @@
 div.Container {
   --row-width: 500px;
-  --row-height: 375px;
+  --row-height: 370px;
   min-width: var(--row-width);
   width: var(--row-width);
   height: var(--row-height);
   position: relative;
   z-index: 1;
+  background-color: antiquewhite;
   margin: auto;
   margin-top: 40px;
-  margin-right: 20px;
-  background-color: antiquewhite;
 
   img {
     max-height: var(--row-height);
@@ -27,20 +26,6 @@ div.Container {
       cursor: pointer;
     }
   }
-
-  div.Buttons {
-    position: absolute;
-    z-index: 5;
-    left: 46%;
-    bottom: 10px;
-    width: 100%;
-    i {
-      font-size: 12px;
-      border-radius: 50%;
-      border: none;
-      margin: 4px;
-    }
-  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -55,11 +40,5 @@ div.Container {
     --row-width: 377px;
     --row-height: 283px;
     margin-left: 10px;
-    div.Buttons {
-      position: absolute;
-      z-index: 5;
-      left: 46%;
-      bottom: 10px;
-    }
   }
 }
