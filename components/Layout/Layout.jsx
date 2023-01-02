@@ -14,8 +14,12 @@ const Layout = ({children}) => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine"
         ></link>
-        <title>Destin Coffee House</title>
-        <link rel="icon" type="image/x-icon"></link>
+        <title>DreamHouseGr</title>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          src="/images/RectanglePaintBucket.png"
+        ></link>
 
         <link
           href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"

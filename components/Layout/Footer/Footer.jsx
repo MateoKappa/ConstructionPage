@@ -14,7 +14,7 @@ export default function Footer() {
         <div className={styles.right}>
           Διεύθυνση:
           <br />· ΒΟΛΟΣ <br />
-          · Τηλέφωνο: 6987963320 <br /> · Ωρες Επικοινωνιας: 08:00 - 20:00
+          · Τηλέφωνο: 6947742687 <br /> · Ωρες Επικοινωνιας: 08:00 - 20:00
         </div>
         <div className={styles.middle}>
           <div className={styles.image}>

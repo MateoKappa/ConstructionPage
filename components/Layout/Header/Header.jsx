@@ -11,7 +11,7 @@ function Header() {
     <div>
       {width > 900 ? (
         <div className={styles.header}>
-          <img src="/images/RectanglePaintBucket.png" />
+          <img src="/favicon.ico" />
           <div className={styles.components}>
             <Link href="/">
               <h4 id="arxikh">Αρχικη</h4>
