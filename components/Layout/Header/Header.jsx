@@ -32,7 +32,7 @@ function Header() {
         </div>
       ) : (
         <div className={styles.tel_header}>
-          <img src="/images/RectanglePaintBucket.png" />
+          <img src="/favicon.ico" />
           <div className={styles.tel_components}>
             <Link
               href="/"
