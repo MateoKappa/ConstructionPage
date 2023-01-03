@@ -17,7 +17,7 @@ function SectionOne() {
         <div className={styles.title}>
           {" "}
           <div className={styles.text}>
-            ΑΝΑΚΑΙΝΙΣΕΙΣ EΠΙΣΚΕΥΕΣ
+            ΑΝΑΚΑΙΝΙΣΕΙΣ ΕΠΙΣΚΕΥΕΣ
             <p>
               Η εταιρεία μας DreamHouseGr δραστηριοποιείται σε όλη την Ελλάδα
               στην ανακαίνιση σπιτιού , οι υπηρεσίες που προσφέρουμε είναι :{" "}
