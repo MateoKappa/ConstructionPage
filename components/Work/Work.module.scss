@@ -226,9 +226,10 @@ div.FullPage {
 @media screen and (max-width: 600px) {
   div.FullPage {
     div.FirstSection {
-      height: 70vh;
+      height: 600px;
       div.Text_Animation {
         div.lottie {
+          margin: 0;
         }
         h2 {
           font-size: 15px;
@@ -238,6 +239,7 @@ div.FullPage {
       }
       img {
         margin: auto;
+        margin-top: -0px;
         width: 100%;
       }
     }
