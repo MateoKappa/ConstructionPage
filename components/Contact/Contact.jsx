@@ -9,12 +9,13 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        "service_462g39c",
-        "template_zagojfa",
+        "service_823xjs9",
+        "template_s5ustxx",
         form.current,
-        "o_vaqleCtcTkAiWrI"
+        "sS_v6mZjOkCj8xvCN"
       )
       .then(
         (result) => {
@@ -24,7 +25,6 @@ export default function Contact() {
           console.log(error.text);
         }
       );
-    e.target.reset();
   };
   return (
     <motion.div
