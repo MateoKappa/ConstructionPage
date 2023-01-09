@@ -5,19 +5,17 @@ import {motion, AnimatePresence} from "framer-motion";
 
 function SectionTwo() {
   const [counter, setCounter] = useState(0);
-  const [counter1, setCounter1] = useState(0);
   const images = [
-    "https://scontent.fskg1-2.fna.fbcdn.net/v/t39.30808-6/273160253_5173593966007043_3249542806498463870_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=CKbh0BYY4mEAX9oz4o0&_nc_ht=scontent.fskg1-2.fna&oh=00_AfBAOgns0t21Gyh3Tb8oUg61S5O56fFfB7xrfyKfdlZTzw&oe=63B84CDD",
+    "https://i.imgur.com/B33q5db.jpg",
     "https://i.imgur.com/tIRyaKl.jpg",
     "https://i.imgur.com/srBHWs8.jpg",
-    "https://scontent.fskg1-1.fna.fbcdn.net/v/t39.30808-6/273052078_5173694802663626_7886629078744781617_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=hFxVolAPeoUAX_CNnzS&_nc_ht=scontent.fskg1-1.fna&oh=00_AfAZOZV_Fx2TvlCkd5U56Owksf3T5mhixoblP3ROewHaiw&oe=63B78C7E",
+    "https://i.imgur.com/vH0164H.jpg",
     "https://i.imgur.com/YQTHWBo.jpg",
     "https://i.imgur.com/9aKTkKE.jpg",
     "https://i.imgur.com/GZLOTX9.jpg",
     "https://i.imgur.com/p1SFIsm.png",
   ];
-  const [change, setChange] = useState(true);
-  const [imagechange, setImageChange] = useState(true);
+
   return (
     <div className={styles.SectionTwo}>
       {/* right background */}
