@@ -19,7 +19,7 @@ function Contact2() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
