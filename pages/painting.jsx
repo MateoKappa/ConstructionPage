@@ -191,7 +191,7 @@ export default function Painting() {
         <LastComponent
           Title="Κοιτάξτε και κάποιες απo τις δουλειες μας !"
           Text="  Εδώ παρουσιάζουμε κάποιες τελειωμένες ανακαινίσεις σπιτιού. Για να πάρετε και εσείς μια γεύση και κάποιες ιδέες για μελλοντικές δουλειές !  "
-          Image="https://scontent.fskg1-2.fna.fbcdn.net/v/t39.30808-6/273160253_5173593966007043_3249542806498463870_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=CKbh0BYY4mEAX9oz4o0&_nc_ht=scontent.fskg1-2.fna&oh=00_AfBAOgns0t21Gyh3Tb8oUg61S5O56fFfB7xrfyKfdlZTzw&oe=63B84CDD"
+          Image="https://i.imgur.com/B33q5db.jpg"
           Right={true}
           Page="/works"
         />
