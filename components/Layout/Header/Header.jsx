@@ -41,13 +41,13 @@ function Header() {
               <i className="fa-solid fa-house-blank"></i>
             </Link>
             <Link href="/works">
-              <i className="fa-solid fa-mug-hot"></i>
+              <i class="fa-solid fa-paint-roller"></i>
             </Link>
             <Link href="/painting">
-              <i className="fa-solid fa-envelope"></i>
+              <i class="fa-sharp fa-solid fa-palette"></i>
             </Link>
             <Link href="/contact">
-              <i className="fa-solid fa-images"></i>
+              <i className="fa-solid fa-envelope"></i>
             </Link>
           </div>
           <div className={styles.tel_telephone}>
