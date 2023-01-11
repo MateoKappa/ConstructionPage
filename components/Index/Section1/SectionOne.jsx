@@ -46,19 +46,6 @@ function SectionOne() {
                 autoplay
               ></lottie-player>
             </div>
-            {width < 780 || (height > 940 && width < 1600) ? null : (
-              <img
-                src="/images/background.svg"
-                className={styles.backgroundSVG}
-                style={{
-                  position: "absolute",
-                  right: -0,
-                  background: "cover",
-                  clipPath: "polygon(38% 1%, 97% 1%, 81.2% 100%, 21.5% 100%)",
-                  zIndex: -2,
-                }}
-              />
-            )}
           </AnimatePresence>
         </div>
       </div>
