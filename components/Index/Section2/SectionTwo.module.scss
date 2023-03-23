@@ -29,7 +29,7 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 18px;
+  font-size: var(--button_Text);
   &:focus {
     box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
       rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
@@ -49,6 +49,7 @@ div.SectionTwo {
   border-top: 1px solid rgba(0, 0, 0, 0.248);
   position: relative;
   border-bottom: 1px solid grey;
+  --button_Text:18px;
   div.WorkerAnimation {
     position: absolute;
     top: 5%;
@@ -125,6 +126,8 @@ div.SectionTwo {
 
 @media screen and (max-width: 1620px) {
   div.SectionTwo {
+    --button_Text:12px;
+
     div.SectionTwoDisplay {
       div.SectionTwoLeft {
         h2 {
@@ -134,6 +137,7 @@ div.SectionTwo {
       div.SectionTwoRight {
         img.image {
           width: 700px;
+          margin-right: 20px;
         }
         div.work {
           width: 680px;

@@ -1,5 +1,5 @@
 import styles from "../components/Index/Index.module.scss";
-import {useState} from "react";
+import { useState } from "react";
 import SectionOne from "../components/Index/Section1/SectionOne";
 import SectionTwo from "../components/Index/Section2/SectionTwo";
 import SectionThree from "../components/Index/Section3/SectionThree";

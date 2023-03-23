@@ -26,35 +26,47 @@ div.FullPage {
   }
 
   div.FirstSection {
-    height: 800px;
+    position: relative;
     display: grid;
-    grid-template-columns: 45% 55%;
-    border-bottom: 2.5px solid rgb(223, 240, 223);
-    div.Text_Animation {
-      margin-top: 50px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      div.lottie {
-        width: 300px;
-      }
-      h2 {
-        padding: 20px;
-        border-radius: 20px;
-        background-color: whitee;
-        font-size: 28px;
-        text-align: center;
-        width: 80%;
-        background-color: rgba(255, 255, 255, 0.801);
-      }
-    }
+    place-items: center;
     img {
-      width: 100%;
+      width: 100vw;
+      height: 70vh;
+      object-fit: cover;
+    }
+    h2,
+    button {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.846);
+      padding: 20px;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: -50px;
+    }
+    button {
+      margin-top: 100px;
+      background-color: rgba(62, 227, 199, 0.835);
+      border: none;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: 200ms;
+      &:hover {
+        transition: 200ms;
+        background-color: rgb(62, 227, 199);
+      }
     }
   }
   // Section One
   div.SectionTwo {
+    margin: 20px 60px;
+    h1 {
+      width: 270px;
+      background-color: white;
+      text-align: center;
+      text-decoration: underline;
+      margin: auto;
+    }
     div.ImageGrid {
       width: 85%;
       grid-row-gap: 16px;
@@ -92,7 +104,7 @@ div.FullPage {
   }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 600px) {
   div.FullPage {
     div.FirstSection {
       div.Text_Animation {
@@ -106,155 +118,8 @@ div.FullPage {
         width: 100%;
       }
     }
-  }
-}
-
-@media screen and (max-width: 1567px) {
-  div.FullPage {
-    overflow-y: hidden;
-    height: 100%;
-    --gap: 16px;
-    --num-cols: 2;
-    --row-height: 300px;
-    div.FirstSection {
-      div.Text_Animation {
-        div.lottie {
-        }
-        h2 {
-          font-size: 20px;
-        }
-      }
-      img {
-        width: 100%;
-      }
-    }
-    div.RightBackground {
-      position: absolute;
-      width: 100%;
-      background-color: rgb(11 184 158 / 25%);
-      right: 0px;
-      z-index: -10;
-      clip-path: polygon(77% 0, 100% 0, 100% 100%, 77% 100%);
-    }
-    div.LeftBackground {
-      position: absolute;
-      width: 100%;
-      background-color: rgb(11 184 158 / 25%);
-      top: 0;
-      left: 0;
-      z-index: -15;
-      clip-path: polygon(0 0, 25% 0, 25% 100%, 0% 100%);
-    }
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  div.FullPage {
-    div.FirstSection {
-      display: flex;
-      flex-wrap: wrap;
-      div.Text_Animation {
-        margin-top: 50px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        div.lottie {
-          width: 15vh;
-        }
-        h2 {
-          font-size: 20px;
-          width: 80%;
-          text-align: center;
-        }
-      }
-      img {
-        margin: auto;
-        width: 70%;
-      }
-    }
-
     div.SectionTwo {
-      display: flex;
-      overflow-x: auto;
-      // grid-template-columns: repeat(var(--num-cols), 1fr);
-      width: 100%;
-      align-items: center;
-      margin-bottom: 100px;
-      grid-column-gap: 16px;
-      grid-row-gap: 16px;
-    }
-    div.Page {
-      div.Image {
-        img {
-          height: 80vw;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  div.FullPage {
-    div.FirstSection {
-      height: 700px;
-      div.Text_Animation {
-        div.lottie {
-        }
-        h2 {
-          font-size: 15px;
-          width: 80%;
-          text-align: center;
-        }
-      }
-      img {
-        margin: auto;
-        width: 90%;
-      }
-    }
-
-    div.SectionTwo {
-      display: flex;
-      overflow-x: auto;
-      width: 100%;
-      align-items: center;
-      margin-bottom: 100px;
-      grid-column-gap: 16px;
-      grid-row-gap: 16px;
-    }
-  }
-}
-@media screen and (max-width: 600px) {
-  div.FullPage {
-    div.FirstSection {
-      height: 600px;
-      div.Text_Animation {
-        div.lottie {
-          margin: 0;
-        }
-        h2 {
-          font-size: 15px;
-          width: 80%;
-          text-align: center;
-        }
-      }
-      img {
-        margin: auto;
-        margin-top: -0px;
-        width: 100%;
-      }
-    }
-
-    div.SectionTwo {
-      div.ImageGrid {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: hidden;
-        width: 100%;
-        align-items: center;
-        height: 100%;
-        margin-bottom: 0px;
-      }
+      margin: 0px;
     }
   }
 }

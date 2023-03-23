@@ -1,94 +1,138 @@
-function WorkImages() {
+function Worksrc() {
   let images = [
     {
-      images: "https://i.imgur.com/NP7hgzI.jpg",
+      src: "https://i.imgur.com/NP7hgzI.jpg",
+      width: 4,
+      height: 3,
     },
     {
-      images: "https://i.imgur.com/B33q5db.jpg",
-    },
-
-    {
-      images: "https://i.imgur.com/c5iVXJ2.jpg",
-    },
-
-    {
-      images: "https://i.imgur.com/I34GP40.jpg",
+      src: "https://i.imgur.com/B33q5db.jpg",
+      width: 1,
+      height: 1,
     },
 
     {
-      images: "https://i.imgur.com/aITK5GD.jpg",
-    },
-    {
-      images: "https://i.imgur.com/vH0164H.jpg",
-    },
-    {
-      images: "https://i.imgur.com/3VLYbAj.jpg",
-    },
-    {
-      images: "https://i.imgur.com/B6HvnwD.png",
-    },
-    {
-      images: "https://i.imgur.com/VHNDE73.png",
-    },
-    {
-      images: "https://i.imgur.com/5UNMHmc.jpg",
-    },
-    {
-      images: "https://i.imgur.com/6mOOwPm.jpg",
+      src: "https://i.imgur.com/c5iVXJ2.jpg",
+      width: 4,
+      height: 3,
     },
 
     {
-      images: "https://i.imgur.com/lAbw1Iu.jpg",
-    },
-    {
-      images: "https://i.imgur.com/uVUwHPQ.jpg",
-    },
-    {
-      images: "https://i.imgur.com/SZjaQtO.jpg",
-    },
-    {
-      images: "https://i.imgur.com/mZFVScI.jpg",
+      src: "https://i.imgur.com/I34GP40.jpg",
+      width: 4,
+      height: 3,
     },
 
     {
-      images: "https://i.imgur.com/ATAEx3u.jpg",
+      src: "https://i.imgur.com/aITK5GD.jpg",
+      width: 4,
+      height: 3,
     },
     {
-      images: "https://i.imgur.com/MSGrTIH.jpg",
+      src: "https://i.imgur.com/vH0164H.jpg",
+      width: 1,
+      height: 1,
     },
     {
-      images: "https://i.imgur.com/2UlXEcW.jpg",
+      src: "https://i.imgur.com/3VLYbAj.jpg",
+      width: 4,
+      height: 3,
     },
     {
-      images: "https://i.imgur.com/CuR7tuQ.jpg",
+      src: "https://i.imgur.com/B6HvnwD.png",
+      width: 4,
+      height: 3,
     },
     {
-      images: "https://i.imgur.com/KVxUn1M.jpg",
+      src: "https://i.imgur.com/VHNDE73.png",
+      width: 1,
+      height: 1,
     },
     {
-      images: "https://i.imgur.com/5crVutF.jpg",
+      src: "https://i.imgur.com/5UNMHmc.jpg",
+      width: 4,
+      height: 3,
     },
     {
-      images: "https://i.imgur.com/nxaTfn3.jpg",
-    },
-    {
-      images: "https://i.imgur.com/n1VE6YE.jpg",
-    },
-    {
-      images: "https://i.imgur.com/PJc03oY.jpg",
-    },
-    {
-      images: "https://i.imgur.com/zjgLLBz.jpg",
+      src: "https://i.imgur.com/6mOOwPm.jpg",
+      width: 4,
+      height: 3,
     },
 
     {
-      images: "https://i.imgur.com/Q1mlQRU.png",
+      src: "https://i.imgur.com/lAbw1Iu.jpg",
+      width: 1,
+      height: 1,
     },
     {
-      images: "https://i.imgur.com/0qmMoSN.png",
+      src: "https://i.imgur.com/uVUwHPQ.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/SZjaQtO.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/mZFVScI.jpg",
+      width: 1,
+      height: 1,
+    },
+
+    {
+      src: "https://i.imgur.com/ATAEx3u.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "https://i.imgur.com/MSGrTIH.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "https://i.imgur.com/2UlXEcW.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/CuR7tuQ.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/KVxUn1M.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "https://i.imgur.com/5crVutF.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/nxaTfn3.jpg",
+      width: 4,
+      height: 3,
+    },
+
+    {
+      src: "https://i.imgur.com/PJc03oY.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "https://i.imgur.com/n1VE6YE.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "https://i.imgur.com/zjgLLBz.jpg",
+      width: 4,
+      height: 3,
     },
   ];
-  return {images};
+  return { images };
 }
 
-export default WorkImages;
+export default Worksrc;

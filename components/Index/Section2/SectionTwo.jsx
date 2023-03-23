@@ -1,7 +1,7 @@
 import React from "react";
-import {useState} from "react";
+import { useState } from "react";
 import styles from "./SectionTwo.module.scss";
-import {motion, AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function SectionTwo() {
   const [counter, setCounter] = useState(0);
@@ -74,14 +74,14 @@ function SectionTwo() {
           <div className={styles.Buttons}>
             <button
               onClick={() => {
-                setCounter(0) & setImageChange(true);
+                setCounter(0);
               }}
             >
               ΕΛΑΙΟΧΡΩΜΑΤΙΣΜΟΙ
             </button>
             <button
               onClick={() => {
-                setCounter(1) & setImageChange(false);
+                setCounter(1);
               }}
             >
               {" "}
@@ -138,9 +138,9 @@ function SectionTwo() {
             <motion.img
               className={styles.image}
               key={images[counter]}
-              initial={{scale: 0, x: 1000}}
-              animate={{scale: 1, x: 0}}
-              transition={{duration: 0.8}}
+              initial={{ scale: 0, x: 1000 }}
+              animate={{ scale: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
               exit={{
                 opacity: 0,
                 transition: {

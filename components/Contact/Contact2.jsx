@@ -8,7 +8,6 @@ function Contact2() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_823xjs9",

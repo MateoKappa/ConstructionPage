@@ -1,10 +1,23 @@
-import {useState} from "react";
+import {lazy, useState} from "react";
 import styles from "./SectionOne.module.scss";
 import {motion, AnimatePresence} from "framer-motion";
 import Window from "../../Window/Window";
 function SectionOne() {
   const {width, height} = Window();
-
+  const Lottie = () =>
+  {
+  return(
+  <lottie-player
+    src="https://assets7.lottiefiles.com/packages/lf20_qcrbuch7.json" 
+    background="transparent"
+    style={{marginBottom: "-12px"}}
+    speed="1.25"
+    loop
+    loading="lazy"
+    autoplay/>
+    )
+  }
+  
   return (
     <div
       style={{
@@ -35,22 +48,13 @@ function SectionOne() {
           </div>
         </div>
         <div>
-          <AnimatePresence exitBeforeEnter>
             <div className={styles.lottie}>
-              <lottie-player
-                src="https://assets7.lottiefiles.com/packages/lf20_qcrbuch7.json"
-                background="transparent"
-                style={{marginBottom: "-12px"}}
-                speed="1.25"
-                loop
-                autoplay
-              ></lottie-player>
+             <Lottie/>
             </div>
-          </AnimatePresence>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default SectionOne;
