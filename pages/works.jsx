@@ -5,9 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import WorkImages from "../components/Images/WorkImages.jsx";
 import LastComponent from "../components/LastComponent/LastComponent.jsx";
 import Gallery from "react-photo-gallery";
+import { useRouter } from "next/router";
 function Works() {
   const [CurrentImage, SetCurrentImage] = useState(null);
   const [number, SetNumber] = useState(0);
+  const router = useRouter();
   let images = WorkImages().images;
 
   const TheNumber = () => {
@@ -22,7 +24,9 @@ function Works() {
       <div className={styles.FirstSection}>
         <img src="https://i.imgur.com/uVUwHPQ.jpg" />
         <h2>Ανακαίνισεις Σπιτιού</h2>
-        <button>Επικοινωνηστε μαζι μας</button>
+        <button onClick={() => router.push("/contact")}>
+          Επικοινωνηστε μαζι μας
+        </button>
       </div>
     );
   };
