@@ -1,6 +1,6 @@
-import {useState} from "react";
+import { useState } from "react";
 import styles from "../components/Paintings/Paintings.module.scss";
-import {motion, AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Window from "../components/Window/Window.jsx";
 import LastComponent from "../components/LastComponent/LastComponent.jsx";
 const images = [
@@ -13,7 +13,7 @@ const images = [
 ];
 
 const SectionOneComp = () => {
-  const {height, width} = Window();
+  const { height, width } = Window();
   return (
     <div className={styles.SectionOne}>
       <div className={styles.TextOne}>
@@ -116,22 +116,22 @@ export default function Painting() {
     <div>
       <AnimatePresence exitBeforeEnter>
         <motion.div
-          initial={{opacity: 0}}
-          animate={{opacity: 1}}
-          transition={{duration: 0.65}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.65 }}
           exit={{
             opacity: 0,
             transition: {
               duration: "0.25",
             },
           }}
-          key={{picture}}
+          key={{ picture }}
           className={styles.App}
         >
           <SectionOneComp />
           <div
             className={shown ? styles.SectionTwo : styles.SectionTwoV2}
-            style={shown ? {} : {height: "100vh"}}
+            style={shown ? {} : { height: "100vh" }}
           >
             <div className={styles.LottieLeft}>
               <lottie-player
@@ -140,7 +140,7 @@ export default function Painting() {
                 speed="1"
                 loop
                 autoplay
-                style={shown ? {} : {height: "100vh"}}
+                style={shown ? {} : { height: "100vh" }}
               ></lottie-player>
             </div>
             <div className={styles.LottieRight}>
@@ -150,13 +150,13 @@ export default function Painting() {
                 speed="1"
                 loop
                 autoplay
-                style={shown ? {} : {height: "100vh"}}
+                style={shown ? {} : { height: "100vh" }}
               ></lottie-player>
             </div>
             {shown ? (
               <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className={styles.ImageCapacity}
               >
                 <motion.div>
@@ -164,7 +164,7 @@ export default function Painting() {
                   <ImageComponent imageName="/PaintingsY/birds.jpg" />
                   <ImageComponent imageName="/PaintingsY/HugeRoom.jpg" />
                 </motion.div>
-                <motion.div style={{marginTop: 60}}>
+                <motion.div style={{ marginTop: 60 }}>
                   <ImageComponent imageName="/PaintingsY/City.jpg" />
                   <ImageComponent imageName="/PaintingsY/Babies.jpg" />
                   <ImageComponent imageName="/PaintingsY/tzaki.jpg" />
@@ -172,10 +172,10 @@ export default function Painting() {
               </motion.div>
             ) : (
               <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{duration: 0.25}}
-                key={{picture}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.25 }}
+                key={{ picture }}
                 exit={{
                   opacity: 0,
                   transition: {
@@ -188,13 +188,6 @@ export default function Painting() {
             )}
           </div>
         </motion.div>
-        <LastComponent
-          Title="Κοιτάξτε και κάποιες απo τις δουλειες μας !"
-          Text="  Εδώ παρουσιάζουμε κάποιες τελειωμένες ανακαινίσεις σπιτιού. Για να πάρετε και εσείς μια γεύση και κάποιες ιδέες για μελλοντικές δουλειές !  "
-          Image="https://i.imgur.com/B33q5db.jpg"
-          Right={true}
-          Page="/works"
-        />
       </AnimatePresence>
     </div>
   );

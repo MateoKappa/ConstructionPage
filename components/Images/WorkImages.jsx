@@ -12,12 +12,6 @@ function Worksrc() {
     },
 
     {
-      src: "https://i.imgur.com/c5iVXJ2.jpg",
-      width: 4,
-      height: 3,
-    },
-
-    {
       src: "https://i.imgur.com/I34GP40.jpg",
       width: 4,
       height: 3,
@@ -25,8 +19,8 @@ function Worksrc() {
 
     {
       src: "https://i.imgur.com/aITK5GD.jpg",
-      width: 4,
-      height: 3,
+      width: 1,
+      height: 1,
     },
     {
       src: "https://i.imgur.com/vH0164H.jpg",
@@ -35,13 +29,13 @@ function Worksrc() {
     },
     {
       src: "https://i.imgur.com/3VLYbAj.jpg",
-      width: 4,
-      height: 3,
+      width: 1,
+      height: 1,
     },
     {
       src: "https://i.imgur.com/B6HvnwD.png",
-      width: 4,
-      height: 3,
+      width: 1,
+      height: 1,
     },
     {
       src: "https://i.imgur.com/VHNDE73.png",
@@ -50,11 +44,6 @@ function Worksrc() {
     },
     {
       src: "https://i.imgur.com/5UNMHmc.jpg",
-      width: 4,
-      height: 3,
-    },
-    {
-      src: "https://i.imgur.com/6mOOwPm.jpg",
       width: 4,
       height: 3,
     },
@@ -86,7 +75,7 @@ function Worksrc() {
       height: 1,
     },
     {
-      src: "https://i.imgur.com/MSGrTIH.jpg",
+      src: "https://i.imgur.com/zjgLLBz.jpg",
       width: 1,
       height: 1,
     },
@@ -102,8 +91,8 @@ function Worksrc() {
     },
     {
       src: "https://i.imgur.com/KVxUn1M.jpg",
-      width: 1,
-      height: 1,
+      width: 4,
+      height: 3,
     },
     {
       src: "https://i.imgur.com/5crVutF.jpg",
@@ -118,16 +107,11 @@ function Worksrc() {
 
     {
       src: "https://i.imgur.com/PJc03oY.jpg",
-      width: 1,
-      height: 1,
-    },
-    {
-      src: "https://i.imgur.com/n1VE6YE.jpg",
       width: 4,
       height: 3,
     },
     {
-      src: "https://i.imgur.com/zjgLLBz.jpg",
+      src: "https://i.imgur.com/n1VE6YE.jpg",
       width: 4,
       height: 3,
     },
