@@ -53,14 +53,14 @@ const SectionOneComp = () => {
           </h3>
         </div>
       </div>
-      {width > 1000 ? (
+      {/* {width > 1000 ? (
         <div className={styles.ButtonOne}>
           <button>
             {" "}
             <i className="fas fa-arrow-alt-down"></i>
           </button>
         </div>
-      ) : null}
+      ) : null} */}
       <div className={styles.ImageOne}>
         <div className={styles.image}>
           <lottie-player
